@@ -1,0 +1,33 @@
+{
+  "name": "block-vote",
+  "version": "1.0.0",
+  "description": "A decentralized voting system using Ethereum blockchain",
+  "main": "server/index.js",
+  "scripts": {
+    "start": "node server/index.js",
+    "client": "cd client && npm start",
+    "server": "nodemon server/index.js",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "install-all": "npm install && cd client && npm install",
+    "deploy": "node deploy.js",
+    "deploy-minimal": "node deploy-minimal.js",
+    "deploy-fresh": "node deploy-fresh.js"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "docx": "^9.5.1",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "ganache": "^7.9.2",
+    "jsonwebtoken": "^9.0.2",
+    "nodemailer": "^6.9.7",
+    "sequelize": "^6.35.1",
+    "sqlite3": "^5.1.6",
+    "web3": "^1.10.3"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "nodemon": "^3.0.1"
+  }
+}
